@@ -43,3 +43,5 @@ With machine learning, specially with supervised ML, everything boils down to fe
 4. Define the Forecast column
 5. Forecast out. This is a regression algorithm. Generally you use regressions to forecast out. You don’t have to, but generally that’s what you are doing.
 6. Create the label.
+
+I am mariflower
