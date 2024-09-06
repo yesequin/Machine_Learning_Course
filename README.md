@@ -24,6 +24,8 @@ Recommendation engine: A computer program that analyzes user input, such as beha
 
 Regression: A statistical model that shows a relationship between one or more predictor variables with a response variable.
 
+Synthetic Data: Artificially generated data with properties similar to real data, used by data scientists to augment their datasets and improve model training.
+
 Tabular data: Data that is organized into rows and columns.
 
 Data science is the field of exploring, manipulating, and analyzing data, and using data to answer questions or make recommendations.
@@ -46,7 +48,7 @@ A data scientist should be:
 
 The data scientist role in an organization:
 
-![image.png](images/image.png)
+![image.png](MACHINE%20LEARNING%2054b056607aa74d78aae3521c8b1d99bd/image.png)
 
 ### File formats
 
@@ -103,7 +105,7 @@ It has 3 deployment models: A cloud deployment model indicate where the infrastr
 
 Some big tech companies offer cloud platforms
 
-![image.png](images/image%201.png)
+![image.png](MACHINE%20LEARNING%2054b056607aa74d78aae3521c8b1d99bd/image%201.png)
 
 ### Big Data
 
@@ -149,6 +151,8 @@ The Big Data processing technologies provide ways to work with large sets of str
 
 ### Data mining process
 
+Data mining is the process of automatically searching and analyzing data, discovering previously unrevelaed patterns.
+
 Big data requires a process called data mining to make use of:
 
 1. Goal set. Identify key questions
@@ -158,11 +162,58 @@ Big data requires a process called data mining to make use of:
 5. Data mine. Determine methods and analyze
 6. Evaluate. Assess outcomes, share results.
 
+## MACHINE LEARNING AND DEEP LEARNING
+
+Data scientist use AI along with Big data to make predictions.
+
+![image.png](MACHINE%20LEARNING%2054b056607aa74d78aae3521c8b1d99bd/image%202.png)
+
+Machine learning is a subset of AI that uses computer algorithms to analyze data and make intelligent decisions based on what it has learned, without being explicit programmed.
+
+Machine learning algorithms:
+
+- are trained with large sets of data
+- They learn from expamples.
+- They do not follow rules-based algorithms
+
+Deep Learning is a specialized subset of machine learning that uses layered neural networks to simulate human decision-making. 
+
+Deep learning algorithms:
+
+- Can label and categorize information, and identify patterns.
+- It is what enables AI systems to continuously learn on the job and improve the quality and accuracy of results
+
+A Neuronal Network in AI, is a collection of small computing units called neurons, that take incoming data and learn to make decisions over time.  Neural networks are often layered-deep, and are the reason deep learning algorithms become more efficient as the data set increase in volume.
+
+### Generative AI
+
+It’s a subset of artificial intelligence that focuses on producing new data rather than just analyzing  existing data. It allows machine to create content, mimicking creations by people.
+
+Deep Learning models like Generative Adversarial Networks (GANs), and Variational auto-encoders (VAEs) are the foundation of this technique. This models create new instances that replicate the underlying distribution of the original data, by learning patterns from enormous volumes of data.
+
+Some of the applications of Generative AI are:
+
+- Natural language processing like Open AIs, Chatgpt
+- In Healthcare, it can synthesize medical images, aiding on the training of medical proffesionals
+- Create unique and stunning art works, generating endless visual compositions.
+- Developers can use it to create realistic enviroments, characters and game levels.
+
+Data Scientist can argument their data set using Generative AI to create synthetic data and use it along with tth original data, for model training and testing. It creates this data with similar properties as the original data.
+
+Some of the benefits of Generative AI are:
+
+- Coding automation
+- Uncover Insights, automate updates
+
+### Regression
+
+Identifies correlation between one or more inputs and an output
+
 # (9) MACHINE LEARNING WITH PYTHON
 
 ## Scikit-learn functions
 
-![image.png](images/image%202.png)
+![image.png](MACHINE%20LEARNING%2054b056607aa74d78aae3521c8b1d99bd/image%203.png)
 
 ## Supervised VS Unsupervised
 
@@ -191,7 +242,7 @@ Customer segmentation is one of the popular usages of clustering.
 
 Clustering can group data only unsupervised based on the similarity of customers to each other. 
 
-![image.png](images/image%203.png)
+![image.png](MACHINE%20LEARNING%2054b056607aa74d78aae3521c8b1d99bd/image%204.png)
 
 1. It will partition your customers into mutually exclusive groups, named clusters. The data in each cluster are similar to each other. 
 2. Now we can create a profile for each group, considering the common characteristics of each cluster. 
@@ -207,13 +258,13 @@ A cluster is a group of data points or group of objects that are similar to othe
 
 ### Clustering Vs. Classification
 
-![image.png](images/image%204.png)
+![image.png](MACHINE%20LEARNING%2054b056607aa74d78aae3521c8b1d99bd/image%205.png)
 
 Classification algorithms predict categorical classed labels. This means assigning instances to predefined classes such as defaulted or not. Classification is a supervised learning where each training data instance belongs to a particular class.
 
-![image.png](images/image%205.png)
+![image.png](MACHINE%20LEARNING%2054b056607aa74d78aae3521c8b1d99bd/image%206.png)
 
-![image.png](images/image%206.png)
+![image.png](MACHINE%20LEARNING%2054b056607aa74d78aae3521c8b1d99bd/image%207.png)
 
 In Clustering, the data is unlabeled, and the process is unsupervised. 
 
@@ -246,6 +297,6 @@ Now we face a couple of key questions:
 1. How can we find the similarity of samples in clustering
 2. How do we measure how similar two customers are with regard to their demographics.
 
-![image.png](images/image%207.png)
+![image.png](MACHINE%20LEARNING%2054b056607aa74d78aae3521c8b1d99bd/image%208.png)
 
 Though the objective of K-Means is to form clusters in such a way that similar samples go into a cluster, and dissimilar samples fall into different clusters, it can be shown that instead of a similarity metric, we can use dissimilarity metrics. In other words, conventionally, the distance of samples from each other is used to shape the clusters. So, we can say K-means tries to minimize the intra cluster distances and maximize the inter-cluster distances.
