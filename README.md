@@ -6,9 +6,13 @@ https://www.youtube.com/watch?v=JcI5Vnw0b2c&list=PLQVvvaa0QuDfKTOs3Keq_kaG2P55YR
 
 ML = Machine Learning
 
+Adobe Spark: A suite of software tools that allow users to create and share visual content such as graphics, web pages, and videos.
+
 Big Data Cluster: A distributed computing environment comprising thousands or tens of thousands of interconnected computers that collectively store and process large datasets.
 
 Chief Data Officer (CDO): An emerging role responsible for overseeing data-related initiatives, governance, and strategies, ensuring that data plays a central role in digital transformation efforts.
+
+Data clusters: A group of similar, related data points distinct from other clusters.
 
 Delimited text file: A plain text file where a specific character separates the data values.
 
@@ -20,13 +24,23 @@ Nearest neighbor: A machine learning algorithm that predicts a target variable b
 
 Neural networks: A computational model used in deep learning that mimics the structure and functioning of the human brain’s neural pathways. It takes an input, processes it using previous learning, and produces an output.
 
+NoSQL databases: Databases are designed to store and manage unstructured data and provide analysis tools for examining this type of data.
+
+Online Transaction Processing (OLTP) Systems: Systems that focus on handling business transactions and storing structured data.
+
 Recommendation engine: A computer program that analyzes user input, such as behaviors or preferences, and makes personalized recommendations based on that analysis.
 
 Regression: A statistical model that shows a relationship between one or more predictor variables with a response variable.
 
+Stata: A software package used for statistical analysis.
+
 Synthetic Data: Artificially generated data with properties similar to real data, used by data scientists to augment their datasets and improve model training.
 
 Tabular data: Data that is organized into rows and columns.
+
+# (1) WHAT IS DATA SCIENCE?
+
+![60de3juKS3G57hPM_kAnYw_97f87cb97da24f71b0db78f9935a8ef1_200457.088-Infograph-on-roadmap-v2.png](images/60de3juKS3G57hPM_kAnYw_97f87cb97da24f71b0db78f9935a8ef1_200457.088-Infograph-on-roadmap-v2.png)
 
 Data science is the field of exploring, manipulating, and analyzing data, and using data to answer questions or make recommendations.
 
@@ -48,7 +62,7 @@ A data scientist should be:
 
 The data scientist role in an organization:
 
-![image.png](MACHINE%20LEARNING%2054b056607aa74d78aae3521c8b1d99bd/image.png)
+![image.png](images/image.png)
 
 ### File formats
 
@@ -105,7 +119,7 @@ It has 3 deployment models: A cloud deployment model indicate where the infrastr
 
 Some big tech companies offer cloud platforms
 
-![image.png](MACHINE%20LEARNING%2054b056607aa74d78aae3521c8b1d99bd/image%201.png)
+![image.png](images/image%201.png)
 
 ### Big Data
 
@@ -164,9 +178,9 @@ Big data requires a process called data mining to make use of:
 
 ## MACHINE LEARNING AND DEEP LEARNING
 
-Data scientist use AI along with Big data to make predictions.
+Data scientist use AI along with Big data to make predictions. Measurement is the first step for an organization to solve its problem using data.
 
-![image.png](MACHINE%20LEARNING%2054b056607aa74d78aae3521c8b1d99bd/image%202.png)
+![image.png](images/image%202.png)
 
 Machine learning is a subset of AI that uses computer algorithms to analyze data and make intelligent decisions based on what it has learned, without being explicit programmed.
 
@@ -209,11 +223,109 @@ Some of the benefits of Generative AI are:
 
 Identifies correlation between one or more inputs and an output
 
+## UNDERSTANDING DATA
+
+Data is unorganized information that is processed to make it meaningful. Generally, data comprises of facts, observations, perceptions, numbers, characters, symbols, and images that can be interpreted to derive meaning.
+
+### Structured data
+
+Data that is well organized in formats that can be stored in databases and lends itself to standard data analysis methods and tools. Structured data is objective facts and numbers that can be collected, exported, stored and organized in typical databases.
+
+Sources could include:
+
+- SQL databases
+- OLTP systems (Online Transaction Processing)
+- Spreadsheets
+- Online forms
+- Sensors GPS and RFID (Radio Frequency Identification)
+- Network and Web server logs
+
+### Semi-Structured data
+
+Data that is somewhat organized and relies on meta tags for grouping and hierarchy. It has some organizational properties but lacks a fixed or rigid schema. It cannot be stored in the form of rows and columns as in databases.
+
+Sources could include:
+
+- E-mails
+- XML and other markup languages. XML and JSON allow users to define tags and attributes to store data in a hierarchical form, and are used widely to store and exchange semi-structured data.
+- Binary executables
+- TCP/IP packets
+- Zipped files
+- Integration of data from different sources.
+
+### Unstructured data
+
+Data that is not conventionally organized in the form of rows and columns in a particular format. Unstructured data can deal with the heterogeneity of sources and has a variety of business intelligence and analytics applications. It can be stored in files and documents such as Word, for manual analysis, or in NoSQL databases that have their own analysis tools for examining this type of data.
+
+Sources could include:
+
+- Web pages
+- Social media feeds
+- Images in varied file formats
+- Video and Audio files
+- Documents and PDF files
+- PowerPoint presentations
+- Media logs
+- Surveys
+
+### Data Sources
+
+SQL Server, Oracle, MySQL, IBM DB2, PostgreSQL are some examples of relational databases to store data in a structured way.
+
+External to the organization, there are other publicly and privately available datasets, typically available as:
+
+- flat files: store data in plain text format, with one record or row per line. Each value is separated by a delimiter, and the data maps to a single table. The most common flat file format is .CSV
+- spreadsheet files: it’s a special type of flat files. It organize data in a tabular format (rows and columns).
+- XML documents: Contain data values that are identified or marked up using tags. It can support complex data structures. Some common uses include online surveys, bank statements, and other unstructured data sets.
+
+APIs and Web Services typically listen for incoming requests, which can be in the form of web requests from users or network requests from applications, and return data in plain text, XML, HTML, JSON, or media files.
+
+Some popular examples of APIs are:
+
+- Twitter and Facebook APIs for customer sentiment analysis.
+- Stock Market APIs for trading and analysis.
+- Data Lookup and Validation APIs, for cleaning and co-relating data.
+
+Web Scraping is used to extract relevant data from unstructured sources. It makes pissible to download specific data based on defined parameters. Some of the popular web scraping tools are:
+
+- BeautifulSoup
+- Scrapy
+- Pandas
+- Selenium
+
+## DATA LITERACY
+
+### Data Collection and Organization
+
+A data repository is a general term used to refer to data that has been collected, organized, and isolated so it can be used for business operations or mined for reporting and data analysis. Data repositories help to isolate data and make reporting and analytics more efficient and credible while also serving as a data archive. 
+
+Some types of data repositories include:
+
+- Databases. A Database Management System (DBMS) is a set of programs that creates and maintains the database. It allows you to store, modify, and extract information from the database using a function called querying. Even though a database and DBMS mean different things, the terms are often used interchangeably.
+- Data Warehouses. It works as a central repository that merges information coming from disparate sources, and consolidates it through the ETL process, into one comprehensive database for analytics and business intelligence.
+- Big Data Stores. It includes distributed computational and storage infrastructure to store, scale, and process very large data sets.
+
+### Relational Database Management System (RDBMS)
+
+A relational database is a collection of data organized into a table structure, where the tables can be linked, or related, based on data common to each. It uses SQL for querying data. 
+
+Rows ar the “records”, and the columns are the “attributes”.
+
+Relational databases build on the organizational principles of flat files such as spreadsheets, with data organized into rows and columns following a well-defined structure and schema.
+
+Some advantages of Relational Databases are:
+
+- Create meaningful information by joining tables.
+- Flexibility to make changes while the database is in use.
+- Minimize data redundancy by allowing relationships to be defined between tables.
+- Offer export and import options that provide ease of backup and disaster recovery.
+- Are ACID compliant (Atomicity, Consistency, Isolation, and Durability), ensuring accuracy and reliability in database transactions
+
 # (9) MACHINE LEARNING WITH PYTHON
 
 ## Scikit-learn functions
 
-![image.png](MACHINE%20LEARNING%2054b056607aa74d78aae3521c8b1d99bd/image%203.png)
+![image.png](images/image%203.png)
 
 ## Supervised VS Unsupervised
 
@@ -242,7 +354,7 @@ Customer segmentation is one of the popular usages of clustering.
 
 Clustering can group data only unsupervised based on the similarity of customers to each other. 
 
-![image.png](MACHINE%20LEARNING%2054b056607aa74d78aae3521c8b1d99bd/image%204.png)
+![image.png](images/image%204.png)
 
 1. It will partition your customers into mutually exclusive groups, named clusters. The data in each cluster are similar to each other. 
 2. Now we can create a profile for each group, considering the common characteristics of each cluster. 
@@ -258,13 +370,13 @@ A cluster is a group of data points or group of objects that are similar to othe
 
 ### Clustering Vs. Classification
 
-![image.png](MACHINE%20LEARNING%2054b056607aa74d78aae3521c8b1d99bd/image%205.png)
+![image.png](images/image%205.png)
 
 Classification algorithms predict categorical classed labels. This means assigning instances to predefined classes such as defaulted or not. Classification is a supervised learning where each training data instance belongs to a particular class.
 
-![image.png](MACHINE%20LEARNING%2054b056607aa74d78aae3521c8b1d99bd/image%206.png)
+![image.png](images/image%206.png)
 
-![image.png](MACHINE%20LEARNING%2054b056607aa74d78aae3521c8b1d99bd/image%207.png)
+![image.png](images/image%207.png)
 
 In Clustering, the data is unlabeled, and the process is unsupervised. 
 
@@ -297,6 +409,6 @@ Now we face a couple of key questions:
 1. How can we find the similarity of samples in clustering
 2. How do we measure how similar two customers are with regard to their demographics.
 
-![image.png](MACHINE%20LEARNING%2054b056607aa74d78aae3521c8b1d99bd/image%208.png)
+![image.png](images/image%208.png)
 
 Though the objective of K-Means is to form clusters in such a way that similar samples go into a cluster, and dissimilar samples fall into different clusters, it can be shown that instead of a similarity metric, we can use dissimilarity metrics. In other words, conventionally, the distance of samples from each other is used to shape the clusters. So, we can say K-means tries to minimize the intra cluster distances and maximize the inter-cluster distances.
