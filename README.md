@@ -12,6 +12,10 @@ Big Data Cluster: A distributed computing environment comprising thousands or te
 
 Chief Data Officer (CDO): An emerging role responsible for overseeing data-related initiatives, governance, and strategies, ensuring that data plays a central role in digital transformation efforts.
 
+Cloud-based Integration Platform as a Service (iPaaS): Cloud-hosted integration platforms that offer integration services through virtual private clouds or hybrid cloud models, providing scalability and flexibility.
+
+Data at rest: Data that is stored and not actively in motion, typically residing in a database or storage system for various purposes, including backup.
+
 Data clusters: A group of similar, related data points distinct from other clusters.
 
 Delimited text file: A plain text file where a specific character separates the data values.
@@ -28,15 +32,21 @@ NoSQL databases: Databases are designed to store and manage unstructured data an
 
 Online Transaction Processing (OLTP) Systems: Systems that focus on handling business transactions and storing structured data.
 
+Portability: The capability of data integration tools to be used in various environments, including single-cloud, multi-cloud, or hybrid-cloud scenarios, provides flexibility in deployment options.
+
 Recommendation engine: A computer program that analyzes user input, such as behaviors or preferences, and makes personalized recommendations based on that analysis.
 
 Regression: A statistical model that shows a relationship between one or more predictor variables with a response variable.
+
+Scalability: The ability of a data repository to grow and expand its capacity to handle increasing data volumes and workload demands over time.
 
 Stata: A software package used for statistical analysis.
 
 Synthetic Data: Artificially generated data with properties similar to real data, used by data scientists to augment their datasets and improve model training.
 
 Tabular data: Data that is organized into rows and columns.
+
+Vendor lock-in: A situation where a user becomes dependent on a specific vendor’s technologies and solutions, making it challenging to switch to other platforms.
 
 # (1) WHAT IS DATA SCIENCE?
 
@@ -321,11 +331,117 @@ Some advantages of Relational Databases are:
 - Offer export and import options that provide ease of backup and disaster recovery.
 - Are ACID compliant (Atomicity, Consistency, Isolation, and Durability), ensuring accuracy and reliability in database transactions
 
+### NoSQL
+
+not only SQL or Non SQL is a non-relational database design that provides flexible schemas for the storage and retrieval of data. NoSQL databases are built for specific data models and have flexible schemas that allow programmers to create and manage modern applications.
+
+Based on the model being used for storing data, there are four common types of NoSQL databases:
+
+- Key-value store. They key represents an attribute of the data and is a unique identifier. It can be anthinf from simple integers or strings to complex JSON documents. Great for storing real-time recommendations, Targeted advertising, and in-memory data caching.
+    - Redis
+    - Memcached
+    - DynamoDB
+- Document Based. They enable flexible indexing, powerful ad hoc queries, and analytics over collections of documents. Preferred for eCommerce platforms, medical records storage, CRM platforms, and analytics platforms.
+    - MogoDB
+    - DocumentDB
+    - CouchDB
+    - Cloudant
+- Column Based. Data is stored in cells grouped as columns of data instead of rows. A logical grouping of columns is referred to as a column family. It’s great for systems that require heavy write requests, storing time-series data, weather data, and IoT data.
+    - Cassandra
+    - Apache HBase
+- Graph Based. It uses a graphical model to represent and store data. It’s useful for visualizing, analyzing, and finding connections between different pieces of data. The circles are nodes, and they contain the data; the arrows represent relationships. Great for social networks, real-time product recommendations, network diagrams, Fraud detection, and access management.
+    - Neo4j
+    - CosmosDB
+    
+    ![image.png](images/image%203.png)
+    
+
+NoSQL was created in response to the limitations of traditional relational database technology. The primary advantage of NoSQL is its ability to handle large volumes of structures, semi-structured, and unstructured data. Some of the other advantages include:
+
+- Its ability to run as a distributed system scaled across multiple data centers.
+- An efficient and cost-effective scale-out architecture that provides additional capacity and performance with the addition of new nodes.
+- Simpler design, better control over availability, and improved scalability that makes it agile, flexible, and to iterate more quickly
+
+### Key differences between relational and Non-relational databases
+
+![image.png](images/image%204.png)
+
+### Data Marts, Data Lakes, ETL, and Data Pipelines
+
+![image.png](images/image%205.png)
+
+A Data Mart is a sub section of the data warehouse, built specifically for a particular business. The idea is to provide stakeholders data that is most relevant to them, when they need it. It offers isolated security and isolated performance, and the most important role of a data Mart is business specific reporting and analytics.
+
+![image.png](images/image%206.png)
+
+A Data Lake is a storage repository that can store large amounts of structured, semi-structured, and unstructured data in their native format, classified and tagged with metadata. A data lake is a pool of raw data where each data element is given a unique identifier and is tagged with meta tags for further use. you would opt for a data lake if you generate, or have access to large volumes of data on an ongoing basis, but don’t want to be restricted to specific or pre-defined use cases. A data lake retains all source data without exclusions
+
+![image.png](images/image%207.png)
+
+ETL process is an automated process which includes:
+
+- Gathering raw data
+- Extracting information needed for reporting and analysis
+- Cleaning, standardizing, and transforming data into usable format
+- Loading data into a data repository
+
+Extraction can be through:
+
+- Batch processing-large chunks of data moved from source to destination at scheduled intervals.
+    - Stich
+    - Blendo
+- Stream processing-data pulled in real-time from source, transformed in transit, and loaded into data repository.
+    - Apache Samza
+    - Apache Storm
+    - Apache Kafka
+
+![image.png](images/image%208.png)
+
+Loading can be:
+
+- Initial loading-populating all of the data in the repository
+- Incremental loading-applying updates and modifications periodically
+- Full refresh-erasing a data table and reloading fresh data
+
+Load Verification includes checks for:
+
+- Missing or null values
+- Server performance
+- Load failures
+
+Data Pipeline is a broader term that encompasses the entire journey of moving data from one system to another, of which ETL is a subset. It can be architected for batch processing, for streaming data, and a combination of batch and streaming data. It’s useful for data that needs constant updating, such as data from a sensor monitoring traffic. It supports both long-running batch queries and smaller interactive queries. Typically loads data into a data lake, but can also load data into a variety of target destinations.
+
+- Apache beam
+- Data Flow
+- Apache Kafka
+
+### Data integration
+
+Is a discipline comprising the practices, architectural techniques, and tools that allow organizations to ingest, transform, combine, and provision data across various data types.
+
+Data integration usage scenarios:
+
+- Data consistency across applications
+- Master data management
+- Data sharing between enterprises
+- Data migration and consolidation
+
+Data integration includes:
+
+- Accessing, queuing, or extracting data from operational systems
+- Transforming and merging extracted data either logically or physically
+- Data quality and govenance
+- Delivering data through an integrated approach for analytics purposes.
+
+Data integration workflow:
+
+![image.png](images/image%209.png)
+
 # (9) MACHINE LEARNING WITH PYTHON
 
 ## Scikit-learn functions
 
-![image.png](images/image%203.png)
+![image.png](images/image%2010.png)
 
 ## Supervised VS Unsupervised
 
@@ -354,7 +470,7 @@ Customer segmentation is one of the popular usages of clustering.
 
 Clustering can group data only unsupervised based on the similarity of customers to each other. 
 
-![image.png](images/image%204.png)
+![image.png](images/image%2011.png)
 
 1. It will partition your customers into mutually exclusive groups, named clusters. The data in each cluster are similar to each other. 
 2. Now we can create a profile for each group, considering the common characteristics of each cluster. 
@@ -370,13 +486,13 @@ A cluster is a group of data points or group of objects that are similar to othe
 
 ### Clustering Vs. Classification
 
-![image.png](images/image%205.png)
+![image.png](images/image%2012.png)
 
 Classification algorithms predict categorical classed labels. This means assigning instances to predefined classes such as defaulted or not. Classification is a supervised learning where each training data instance belongs to a particular class.
 
-![image.png](images/image%206.png)
+![image.png](images/image%2013.png)
 
-![image.png](images/image%207.png)
+![image.png](images/image%2014.png)
 
 In Clustering, the data is unlabeled, and the process is unsupervised. 
 
@@ -409,6 +525,6 @@ Now we face a couple of key questions:
 1. How can we find the similarity of samples in clustering
 2. How do we measure how similar two customers are with regard to their demographics.
 
-![image.png](images/image%208.png)
+![image.png](images/image%2015.png)
 
 Though the objective of K-Means is to form clusters in such a way that similar samples go into a cluster, and dissimilar samples fall into different clusters, it can be shown that instead of a similarity metric, we can use dissimilarity metrics. In other words, conventionally, the distance of samples from each other is used to shape the clusters. So, we can say K-means tries to minimize the intra cluster distances and maximize the inter-cluster distances.
